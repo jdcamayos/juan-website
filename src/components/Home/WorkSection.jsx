@@ -38,17 +38,17 @@ export default function WorkSection() {
 				{
 					id: 1,
 					title: 'HSRP Billing App',
-					img: 'https://res.cloudinary.com/jdcamayos/image/upload/v1650315521/jdcamayos-com/billing-app/Home_t0tgki.png',
+					img: 'https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_400/v1650315521/jdcamayos-com/billing-app/Home_t0tgki.png',
 				},
 				// {
 				// 	id: 2,
 				// 	title: 'Medical History Interoperability',
-				// 	img: 'https://res.cloudinary.com/jdcamayos/image/upload/v1650317737/jdcamayos-com/interoperability/Image1_jsbltw.png',
+				// 	img: 'https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_400/v1650317737/jdcamayos-com/interoperability/Image1_jsbltw.png',
 				// },
 				// {
 				// 	id: 3,
 				// 	title: 'BookBox',
-				// 	img: 'https://res.cloudinary.com/jdcamayos/image/upload/v1650322347/jdcamayos-com/bookbox/Screenshot_2022-04-18_175211_xvmytf.png',
+				// 	img: 'https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_400/v1650322347/jdcamayos-com/bookbox/Screenshot_2022-04-18_175211_xvmytf.png',
 				// },
 			],
 		},
@@ -60,12 +60,12 @@ export default function WorkSection() {
 				{
 					id: 1,
 					title: 'CoinMarket',
-					img: 'https://res.cloudinary.com/jdcamayos/image/upload/v1650322597/jdcamayos-com/projects/personal/coin-market-react/Screenshot_2022-04-18_175513_usuf5k.png',
+					img: 'https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_400/v1650322597/jdcamayos-com/projects/personal/coin-market-react/Screenshot_2022-04-18_175513_usuf5k.png',
 				},
 				// {
 				// 	id: 2,
 				// 	title: 'Ninja Notes MUI',
-				// 	img: 'https://res.cloudinary.com/jdcamayos/image/upload/v1650323549/jdcamayos-com/projects/personal/ninja-notes-mui/Screenshot_2022-04-18_181157_svtggu.png',
+				// 	img: 'https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_400/v1650323549/jdcamayos-com/projects/personal/ninja-notes-mui/Screenshot_2022-04-18_181157_svtggu.png',
 				// },
 			],
 		},

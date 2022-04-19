@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {
-	faArrowDown,
+	// faArrowDown,
 	faBriefcase,
 	faMedal,
 } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +16,7 @@ export default function AboutSection() {
 			<div className='about__container container grid'>
 				<div className='about__image'>
 					<img
-						src='https://res.cloudinary.com/jdcamayos/image/upload/v1650332904/jdcamayos-com/AboutImage_n1ohep.png'
+						src='https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_500/v1650332904/jdcamayos-com/AboutImage_n1ohep.png'
 						alt='About Juan'
 					/>
 				</div>

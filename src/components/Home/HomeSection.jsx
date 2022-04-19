@@ -1,14 +1,19 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import ImageCloudinary from '../ImageCloudinary'
 
 export default function HomeSection() {
 	return (
 		<section className='home section section__home' id='home'>
 			<div className='home__container container grid'>
 				<div className='home__blob'>
-					<img src="https://res.cloudinary.com/jdcamayos/image/upload/v1650332875/jdcamayos-com/GreetingImage_vlhcb9.png" alt='Greeting Juan' />
+					<img src="https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_600/v1650332875/jdcamayos-com/GreetingImage_vlhcb9.png" alt='Greeting Juan' />
+					{/* <ImageCloudinary
+						imgName='https://res.cloudinary.com/jdcamayos/image/upload/v1650332875/jdcamayos-com/GreetingImage_vlhcb9.png'
+						height='600'
+					/> */}
 				</div>
 				<div className='home__data'>
 					<span className='home__greeting'>Hi!</span>
