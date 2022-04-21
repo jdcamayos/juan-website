@@ -388,7 +388,6 @@ img {
 	color: var(--container-color);
 }
 
-
 /* ============ Skills ============ */
 .skills__container {
 	row-gap: 2rem;
@@ -445,7 +444,7 @@ img {
 	font-size: var(--tiny-font-size);
 }
 
-/* ============ Skills ============ */
+/* ============ Works ============ */
 .work__container {
 	padding-top: 1rem;
 }
@@ -510,6 +509,125 @@ img {
 	color: var(--body-color);
 }
 
+/* ============ Projects Page ============ */
+.projects__container {
+	padding-top: 3.5rem;
+}
+
+.project__carousel {
+	position: relative;
+	/* filter: drop-shadow(0 0 0.5rem var(--first-color)); */
+	perspective: 100px;
+	height: 250px;
+}
+
+.project__carousel-viewport {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	counter-reset: item;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+}
+
+.project__carousel-slide {
+	position: relative;
+	padding: 0 0.25rem;
+	flex: 0 0 100%;
+	width: 100%;
+	scroll-snap-align: center;
+}
+
+.project__title {
+	font-size: var(--normal-font-size);
+	font-weight: var(--font-medium);
+	color: var(--first-color);
+	/* text-align: center; */
+	margin-top: 1.5rem;
+}
+
+.project__complexity {
+	margin: 0.5rem 0;
+	color: var(--first-color);
+}
+
+.project__technologies {
+	margin: 1rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	/* flex: 0 0 100%; */
+}
+.project__technology {
+	padding: 0.15rem 0.5rem;
+	margin: 0.35rem 0.5rem;
+	background-color: var(--first-color);
+	color: var(--container-color);
+	font-weight: var(--font-semibold);
+	border-radius: 0.25rem;
+}
+
+.projects__list {
+	position: relative;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	height: 135px;
+}
+
+.project__list-viewport {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	column-gap: 1rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	counter-reset: item;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	padding-bottom: 1rem;
+}
+
+.projects__list-item {
+	position: relative;
+	height: 120px;
+	border: 1px solid var(--first-color);
+	border-radius: 1rem;
+	padding: 0.25rem;
+	flex: 0 0 120px;
+	width: 100%;
+	scroll-snap-align: start;
+	color: var(--first-color);
+	font-size: var(--small-font-size);
+	overflow: hidden;
+}
+
+.project__item-selected {
+	background-color: var(--first-color);
+	color: var(--container-color);
+	font-weight: var(--font-semibold);
+}
+
+.project__item-img {
+	height: 60px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 0.8rem;
+	/* align-self: center; */
+
+	/* border-radius: 1rem; */
+	/* overflow: hidden; */
+}
+
+.project__item-name {
+	/* margin: 0 auto; */
+	text-align: center;
+}
 
 /* ============ Contact ============ */
 .contact__container {
@@ -618,7 +736,6 @@ img {
 .contact__form-area textarea {
 	resize: none;
 }
-
 
 /* ============ Footer ============ */
 .footer {
@@ -745,7 +862,6 @@ img {
 	}
 }
 
-
 /* ============ Medium Devices ============ */
 @media screen and (min-width: 530px) {
 	.nav__menu {
@@ -757,14 +873,15 @@ img {
 
 	.home__blob img {
 		max-height: 450px;
-		transform: translate(-10%,10%);
+		transform: translate(-10%, 10%);
 	}
 
 	.home__data {
 		padding-top: 5.5rem;
 	}
 
-	.home__name, .home__education {
+	.home__name,
+	.home__education {
 		text-align: left;
 	}
 
@@ -772,7 +889,7 @@ img {
 		grid-template-columns: repeat(2, 140px);
 		justify-content: center;
 	}
-	
+
 	.about__image {
 		max-width: 300px;
 		max-height: 300px;
@@ -811,6 +928,25 @@ img {
 		width: 295px;
 	}
 
+	.project__section {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		place-items: center;
+	}
+
+	.project__carousel {
+		width: 90%;
+	}
+
+	.projects__list {
+		display: flex;
+	}
+
+	.project__list-viewport {
+		/* width: 75vw; */
+
+	}
+
 	.contact__info {
 		grid-template-columns: 300px;
 		justify-content: center;
@@ -823,16 +959,14 @@ img {
 }
 
 @media screen and (min-width: 767px) {
-
 	.home__blob img {
-		transform: translate(-30%,10%);
+		transform: translate(-30%, 10%);
 	}
 
 	.about__container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
-
 
 	.work__container {
 		grid-template-columns: repeat(2, max-content);
@@ -898,7 +1032,7 @@ img {
 
 	.home__blob img {
 		max-height: 550px;
-		transform: translate(-15%,25%);
+		transform: translate(-15%, 25%);
 	}
 
 	.about__img {
@@ -971,4 +1105,3 @@ img {
 		border-radius: 0.5rem;
 	}
 }
-

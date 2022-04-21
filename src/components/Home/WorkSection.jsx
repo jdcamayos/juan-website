@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 
 export default function WorkSection() {
 	// const works = [
@@ -34,11 +35,12 @@ export default function WorkSection() {
 			id: 1,
 			category: 'Client',
 			description: '',
+			link: '/projects/client',
 			works: [
 				{
 					id: 1,
 					title: 'HSRP Billing App',
-					img: 'https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_400/v1650315521/jdcamayos-com/billing-app/Home_t0tgki.png',
+					img: 'https://res.cloudinary.com/jdcamayos/image/upload/c_scale,w_400/v1650315521/jdcamayos-com/projects/client/billing-app/Home_t0tgki.png',
 				},
 				// {
 				// 	id: 2,
@@ -56,6 +58,7 @@ export default function WorkSection() {
 			id: 2,
 			category: 'Personal',
 			description: '',
+			link: '/projects/personal',
 			works: [
 				{
 					id: 1,
@@ -93,10 +96,12 @@ export default function WorkSection() {
 							))}
 						</div>
 						<h3 className='work__title'>{wg.category}</h3>
-						<a href='#' className='work__button'>
-							See All
-							<FontAwesomeIcon icon={faArrowRight} className='work__icon' />
-						</a>
+						<Link href={wg.link}>
+							<a className='work__button'>
+								See All
+								<FontAwesomeIcon icon={faArrowRight} className='work__icon' />
+							</a>
+						</Link>
 					</div>
 				))}
 			</div>

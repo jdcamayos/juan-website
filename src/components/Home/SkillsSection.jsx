@@ -25,11 +25,13 @@ export default function SkillsSection() {
 			title: 'Backend',
 			skills: [
 				{ id: 1, name: 'NodeJS', level: 'Advanced', stars: 8 },
-				{ id: 2, name: 'ExpressJS', level: 'Advanced', stars: 8 },
+				{ id: 2, name: 'NPM', level: 'Advanced', stars: 8 },
 				{ id: 3, name: 'SQL', level: 'Advanced', stars: 8 },
 				{ id: 4, name: 'NoSQL', level: 'Intermediate', stars: 7 },
 				{ id: 5, name: 'Webpack', level: 'Intermediate', stars: 7 },
 				{ id: 6, name: 'Docker', level: 'Intermediate', stars: 7 },
+				{ id: 7, name: 'AWS', level: 'Intermediate', stars: 7 },
+				{ id: 8, name: 'Azure', level: 'Basic', stars: 6 },
 			],
 		},
 	]
@@ -49,7 +51,6 @@ export default function SkillsSection() {
                     <span className="skill__icon">
                       <FontAwesomeIcon icon={faCircleCheck} />
                     </span>
-										{/* <i className='bx bxs-badge-check' /> */}
 
 										<div>
 											<h3 className='skills__name'>{s.name}</h3>
