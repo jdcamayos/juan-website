@@ -32,6 +32,7 @@ export default function SkillsSection() {
 				{ id: 6, name: 'Docker', level: 'Intermediate', stars: 7 },
 				{ id: 7, name: 'AWS', level: 'Intermediate', stars: 7 },
 				{ id: 8, name: 'Azure', level: 'Basic', stars: 6 },
+				// { id: 8, name: 'Linux', level: 'Intermediate', stars: 7 },
 			],
 		},
 	]

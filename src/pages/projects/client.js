@@ -77,7 +77,7 @@ export default function client() {
 				<meta name='description' content='' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<ProjectsContainer projects={projects} />
+			<ProjectsContainer title="Client" projects={projects} />
 		</>
 	)
 }

@@ -35,7 +35,7 @@ export default function personal() {
 				<meta name='description' content='' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<ProjectsContainer projects={projects} />
+			<ProjectsContainer title="Personal" projects={projects} />
 		</>
 	)
 }

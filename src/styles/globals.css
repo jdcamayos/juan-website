@@ -16,11 +16,7 @@
 	--second-hue: 219;
 
 	--first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-	--first-color-alt: hsl(
-		var(--first-hue),
-		var(--sat),
-		calc(var(--lig) - 15%)
-	); /* -4% */
+	--first-color-alt: hsl(var(--first-hue), var(--sat), calc(var(--lig) - 15%)); /* -4% */
 	--title-color: hsl(var(--second-hue), 15%, 95%);
 	--text-color: hsl(var(--second-hue), 8%, 75%);
 	--text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -514,6 +510,13 @@ img {
 	padding-top: 3.5rem;
 }
 
+.projects__goback-button {
+	position: absolute;
+	height: 1.5rem;
+	width: 1.5rem;
+	color: var(--first-color);
+}
+
 .project__carousel {
 	position: relative;
 	/* filter: drop-shadow(0 0 0.5rem var(--first-color)); */
@@ -595,8 +598,11 @@ img {
 
 .projects__list-item {
 	position: relative;
+	margin: 1rem 0;
 	height: 120px;
-	border: 1px solid var(--first-color);
+	border: 1px solid var(--container-color);
+	/* box-shadow: 0 0 5px 5px var(--container-color); */
+	background-color: var(--container-color);
 	border-radius: 1rem;
 	padding: 0.25rem;
 	flex: 0 0 120px;
@@ -611,6 +617,7 @@ img {
 	background-color: var(--first-color);
 	color: var(--container-color);
 	font-weight: var(--font-semibold);
+	transition: 0.3s;
 }
 
 .project__item-img {
@@ -618,20 +625,14 @@ img {
 	width: 100%;
 	object-fit: cover;
 	border-radius: 0.8rem;
-	/* align-self: center; */
-
-	/* border-radius: 1rem; */
-	/* overflow: hidden; */
 }
 
 .project__item-name {
-	/* margin: 0 auto; */
 	text-align: center;
 }
 
 /* ============ Contact ============ */
 .contact__container {
-	/* row-gap: 3rem; */
 	padding-bottom: 3rem;
 }
 
@@ -944,7 +945,6 @@ img {
 
 	.project__list-viewport {
 		/* width: 75vw; */
-
 	}
 
 	.contact__info {
